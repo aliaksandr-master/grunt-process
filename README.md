@@ -177,3 +177,32 @@ grunt.initConfig({
 ```
 
 more exampels in Gruntfile.js
+
+
+### Extend this task
+
+```js
+var gruntProcess = require('grunt-process/lib');
+
+gruntProcess(grunt, filesArray, options, done);
+```
+
+example
+```js
+'use strict';
+
+var gruntProcess = require('grunt-process/lib');
+
+module.exports = function (grunt) {
+	grunt.registerMultiTask('my-json-processTask', function () {
+	    var options = this.options({});
+
+		task(grunt, this.files, {
+		    read: function (src, dest, fileObject) {
+		        return grunt.file.readJSON(src, options.readOptions);
+		    },
+
+		}, this.async());
+	});
+};
+```
