@@ -4,6 +4,7 @@ var _ = require('lodash');
 
 module.exports = function (grunt) {
 	grunt.initConfig({
+
 		jshint: {
 			all: [
 				'Gruntfile.js',
@@ -23,7 +24,7 @@ module.exports = function (grunt) {
 		process: {
 			compress: {
 				options: {
-					read: function (src, dest, readOptions, fileObject) {
+					read: function (src, dest, fileObject) {
 						return grunt.file.readJSON(src);
 					},
 					process: function (src, dest, content, fileObject) {
@@ -35,6 +36,43 @@ module.exports = function (grunt) {
 					src: 'tests/source/compress.json',
 				   dest: '.tmp/compress.json'
 				}]
+			},
+			compressAndSplitJsonByKey: {
+				options: {
+					// read file and convert to JSON
+					read: function (src, dest, fileObject) {
+						return grunt.file.readJSON(src);
+					},
+
+					// add someKey to content object
+					process: function (src, dest, content, fileObject) {
+						content.someKey = 123;
+
+						return content;
+					},
+
+					// split json by object key
+					save: function (src, dest, content, fileObject) {
+						var files = {};
+
+						_.each(content, function (v, k) {
+							var file = fileObject.orig.dest + '/' + k + '.json';
+							files[file] = JSON.stringify(v);
+						});
+
+						return files;
+					}
+				},
+				files: [
+					{
+						expand: true,
+						cwd: 'tests/source/compress_and_split',
+						dest: '.tmp/compress_and_split',
+						src: [
+							'**/*.json'
+						]
+					}
+				]
 			},
 			remove_whitespaces: {
 				options: {
@@ -67,7 +105,7 @@ module.exports = function (grunt) {
 			},
 			asyncRead: {
 				options: {
-					read: function (src, dest, readOptions, fileObject) {
+					read: function (src, dest, fileObject) {
 						var done = this.async();
 						process.nextTick(function () {
 							done(null, '1');
