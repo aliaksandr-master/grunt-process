@@ -1,0 +1,42 @@
+{
+  "name": "grunt-process",
+  "version": "1.0.0",
+  "description": "gruntplugin for processing (add, replace, split) any file",
+  "main": "tasks/index",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://aliaksandr-pasynkau@github.com/aliaksandr-pasynkau/grunt-process.git"
+  },
+  "keywords": [
+    "gruntplugin",
+    "process",
+    "file",
+    "custom",
+    "task",
+    "porcessor"
+  ],
+  "author": "aliaksandr-pasynkau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aliaksandr-pasynkau/grunt-process/issues"
+  },
+  "homepage": "https://github.com/aliaksandr-pasynkau/grunt-process",
+  "dependencies": {
+    "async": "^0.9.0",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
