@@ -1,6 +1,6 @@
 {
   "name": "grunt-process",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gruntplugin for processing (add, replace, split) any file",
   "main": "tasks/index",
   "directories": {
