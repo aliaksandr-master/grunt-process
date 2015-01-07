@@ -6,6 +6,8 @@
 
 # grunt-process
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aliaksandr-pasynkau/grunt-process?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Gruntplugin for processing (add, replace, split) any file
 
 ## Getting Started
