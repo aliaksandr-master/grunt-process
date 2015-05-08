@@ -4,6 +4,7 @@
 [![devDependency Status](https://david-dm.org/aliaksandr-pasynkau/grunt-process/dev-status.svg?style=flat-square)](https://david-dm.org/aliaksandr-pasynkau/grunt-process#info=devDependencies)
 [![Build Status](https://travis-ci.org/aliaksandr-pasynkau/grunt-process.svg?branch=master&style=flat-square)](https://travis-ci.org/aliaksandr-pasynkau/grunt-process)
 [![Coverage Status](https://img.shields.io/coveralls/aliaksandr-pasynkau/grunt-process.svg?style=flat-square)](https://coveralls.io/r/aliaksandr-pasynkau/grunt-process?branch=master)
+[![Code Climate](https://codeclimate.com/github/aliaksandr-pasynkau/grunt-process/badges/gpa.svg)](https://codeclimate.com/github/aliaksandr-pasynkau/grunt-process)
 
 # grunt-process
 
