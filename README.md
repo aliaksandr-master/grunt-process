@@ -5,10 +5,9 @@
 [![Build Status](https://travis-ci.org/aliaksandr-pasynkau/grunt-process.svg?branch=master&style=flat-square)](https://travis-ci.org/aliaksandr-pasynkau/grunt-process)
 [![Coverage Status](https://img.shields.io/coveralls/aliaksandr-pasynkau/grunt-process.svg?style=flat-square)](https://coveralls.io/r/aliaksandr-pasynkau/grunt-process?branch=master)
 [![Code Climate](https://codeclimate.com/github/aliaksandr-pasynkau/grunt-process/badges/gpa.svg)](https://codeclimate.com/github/aliaksandr-pasynkau/grunt-process)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aliaksandr-pasynkau/grunt-process?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # grunt-process
-
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aliaksandr-pasynkau/grunt-process?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Gruntplugin for processing (add, replace, split) any file
 
